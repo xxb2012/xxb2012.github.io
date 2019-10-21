@@ -151,6 +151,70 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Mysql总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/21/Mysql%E6%80%BB%E7%BB%93/">Mysql总结</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/21/Mysql%E6%80%BB%E7%BB%93/" class="archive-article-date">
+  	<time datetime="2019-10-21T12:31:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#1 查询数据<br>SELECT<em>FROM stem;<br>/</em><br>数据库分类：<br>关系型数据库：sqlserver mysql Oracle<br>非关系型数据库:</p>
+<p>数据库即数据仓库，里边存储的是有关系的数据<br>数据库里面，真正装数据得是一张张表<br>什么是表？<br>    表由行和列组成<br>    行称为记录<br>    列称为字段或属性<br>    例如：学生表，学生有学号，班级，姓名，身份证号，年级，那么这些就称为学生表的字段，学生的数据就是一条条记录<br>一个数据库一般由多张有关系的表组成<br>    第二部分：<br>    SQL语句<br>        1、创建语句、<br>        创建数据库<br>            1.1、create database  库名；<br>            1.2、create table  表名（<br>                字段名1 数据类型 约束，<br>                字段名2 数据类型 约束，<br>                字段名3 数据类型<br>                ）<br>                最常用的数据类型<br>                int<br>                char(字符串类型，固定长度)<br>                varchar(字符串类型，可变长度)<br>                float  （36页）<br>        2、插入语句<br>        insert into 表名（字段1，字段2）values(数据1，数据2)<br>        3、查询语句<br>        SELECT 字段1，字段2，字段3 form 表名<br>        <em>（所有字段）<br>        4、删除语句<br>        删除库 drop database 库名;<br>        删除表 drop table 表名;<br>        删除表中所有数据 delete from 表名;<br>        删除表中指定数据 delete from 表名 where….<br>        truncate删除表中数据，并回收空间。delete删除后表所占空间不会收回<br>        5、修改语句<br>        update 表名 set…..where….<br>五、约束<br>    1.主键约束（primary key）<br>        主键：一行的唯一标识<br>            表中的其他数据依赖于主键<br>        不允许重复，非空<br>    2.非空约束（not null）<br>    3.唯一约束（unique）<br>        此列不允许重复，可为null，但null也不允许重复<br>    4.默认值约束（default）<br>    5.check约束（check）<br>    6.外键约束（foreign key）<br>        外键：此表中的一个字段引用另外一张表中字段数据，并且被引用的字段，<br>        是另外一张表的主键。那么此表中的字段就称为本张表的外键<br>        */<br>#创建库<br>CREATE DATABASE onlinemalll;<br>#使用指定的库<br>USE onlinemalll;<br>#创建表；<br>CREATE TABLE goods(<br>    gid INT PRIMARY KEY,#把gid设置为表的主键<br>    gnam VARCHAR(100),<br>    gprice FLOAT<br>)<br>#插入数据<br>INSERT INTO goods(gid,gnam,gprice) VALUES(1,’小鱼饼干’,10);<br>INSERT INTO goods(gnam,gprice) VALUES(‘臭鼬’,77);<br>INSERT INTO goods(gid,gnam,gprice) VALUES(3,’哈士奇’,88);<br>INSERT INTO goods(gid,gnam,gprice) VALUES(5,’臭鼬’,77);<br>#查询goods表<br>SELECT *FROM goods;<br>SELECT *FROM ggg;<br>#查询商品价格大于50的商品<br>SELECT * FROM goods WHERE gprice&gt;50;<br>#查询商品价格大于50小于100的商品信息<br>SELECT * FROM goods WHERE gprice&gt;50 AND gprice&lt;100;<br>SELECT * FROM goods WHERE gprice BETWEEN 50 AND 100;<br>#查询商品数量 as 新字段名  或 ‘新字段名’  给列名重命名成新的列名<br>SELECT COUNT(</em>) FROM goods;<br>SELECT COUNT(*) AS’总数量’FROM goods;<br>#查询商品总价格，平均价格，最高，最低价格<br>SELECT SUM(gprice) ‘总价格’ FROM goods;<br>SELECT AVG(gprice) ‘平均价格’ FROM goods;<br>SELECT MAX(gprice) ‘最高价格’ FROM goods;<br>SELECT MIN(gprice) ‘最低价格’ FROM goods;<br>#删除gid等于3的数据<br>DELETE FROM goods WHERE gid=3;<br>#将价格进行更改<br>UPDATE goods SET gprice=15 WHERE gnam=’臭鼬’;<br>#把gnam中等于哈士奇臭鼬的都查询出来<br>SELECT *FROM goods WHERE gnam IN(‘哈士奇’,’臭鼬’);<br>#把商品名字重复的去掉<br>SELECT DISTINCT gnam FROM goods;<br>#查询表的前两行<br>SELECT * FROM goods LIMIT 0,2;<br>#修改表名<br>ALTER TABLE goods RENAME TO ggg;<br>#修改数据类型<br>#alter table modify 列名的数据类型<br>#修改列名 alter table&lt;表名&gt; change 旧列名 新列名<br>#删除列alter table 表名drop列名<br>#删除表drop table 表名<br>#添加列 alter table 表名 add 新列名 数据类型</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/21/Mysql%E6%80%BB%E7%BB%93/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

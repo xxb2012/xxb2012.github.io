@@ -6,16 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | Hexo</title>
+  <title>Mysql总结 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="#1 查询数据SELECTFROM stem;&#x2F;数据库分类：关系型数据库：sqlserver mysql Oracle非关系型数据库: 数据库即数据仓库，里边存储的是有关系的数据数据库里面，真正装数据得是一张张表什么是表？    表由行和列组成    行称为记录    列称为字段或属性    例如：学生表，学生有学号，班级，姓名，身份证号，年级，那么这些就称为学生表的字段，学生的数据就是一条条记录">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;16&#x2F;hello-world&#x2F;index.html">
+<meta property="og:title" content="Mysql总结">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;21&#x2F;Mysql%E6%80%BB%E7%BB%93&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="#1 查询数据SELECTFROM stem;&#x2F;数据库分类：关系型数据库：sqlserver mysql Oracle非关系型数据库: 数据库即数据仓库，里边存储的是有关系的数据数据库里面，真正装数据得是一张张表什么是表？    表由行和列组成    行称为记录    列称为字段或属性    例如：学生表，学生有学号，班级，姓名，身份证号，年级，那么这些就称为学生表的字段，学生的数据就是一条条记录">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-16T12:05:29.718Z">
+<meta property="og:updated_time" content="2019-10-21T12:32:50.895Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -152,39 +152,28 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Mysql总结" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Mysql总结
     </h1>
   
 
         
-        <a href="/2019/10/16/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-16T12:05:29.718Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-16</time>
+        <a href="/2019/10/21/Mysql%E6%80%BB%E7%BB%93/" class="archive-article-date">
+  	<time datetime="2019-10-21T12:31:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-21</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>#1 查询数据<br>SELECT<em>FROM stem;<br>/</em><br>数据库分类：<br>关系型数据库：sqlserver mysql Oracle<br>非关系型数据库:</p>
+<p>数据库即数据仓库，里边存储的是有关系的数据<br>数据库里面，真正装数据得是一张张表<br>什么是表？<br>    表由行和列组成<br>    行称为记录<br>    列称为字段或属性<br>    例如：学生表，学生有学号，班级，姓名，身份证号，年级，那么这些就称为学生表的字段，学生的数据就是一条条记录<br>一个数据库一般由多张有关系的表组成<br>    第二部分：<br>    SQL语句<br>        1、创建语句、<br>        创建数据库<br>            1.1、create database  库名；<br>            1.2、create table  表名（<br>                字段名1 数据类型 约束，<br>                字段名2 数据类型 约束，<br>                字段名3 数据类型<br>                ）<br>                最常用的数据类型<br>                int<br>                char(字符串类型，固定长度)<br>                varchar(字符串类型，可变长度)<br>                float  （36页）<br>        2、插入语句<br>        insert into 表名（字段1，字段2）values(数据1，数据2)<br>        3、查询语句<br>        SELECT 字段1，字段2，字段3 form 表名<br>        <em>（所有字段）<br>        4、删除语句<br>        删除库 drop database 库名;<br>        删除表 drop table 表名;<br>        删除表中所有数据 delete from 表名;<br>        删除表中指定数据 delete from 表名 where….<br>        truncate删除表中数据，并回收空间。delete删除后表所占空间不会收回<br>        5、修改语句<br>        update 表名 set…..where….<br>五、约束<br>    1.主键约束（primary key）<br>        主键：一行的唯一标识<br>            表中的其他数据依赖于主键<br>        不允许重复，非空<br>    2.非空约束（not null）<br>    3.唯一约束（unique）<br>        此列不允许重复，可为null，但null也不允许重复<br>    4.默认值约束（default）<br>    5.check约束（check）<br>    6.外键约束（foreign key）<br>        外键：此表中的一个字段引用另外一张表中字段数据，并且被引用的字段，<br>        是另外一张表的主键。那么此表中的字段就称为本张表的外键<br>        */<br>#创建库<br>CREATE DATABASE onlinemalll;<br>#使用指定的库<br>USE onlinemalll;<br>#创建表；<br>CREATE TABLE goods(<br>    gid INT PRIMARY KEY,#把gid设置为表的主键<br>    gnam VARCHAR(100),<br>    gprice FLOAT<br>)<br>#插入数据<br>INSERT INTO goods(gid,gnam,gprice) VALUES(1,’小鱼饼干’,10);<br>INSERT INTO goods(gnam,gprice) VALUES(‘臭鼬’,77);<br>INSERT INTO goods(gid,gnam,gprice) VALUES(3,’哈士奇’,88);<br>INSERT INTO goods(gid,gnam,gprice) VALUES(5,’臭鼬’,77);<br>#查询goods表<br>SELECT *FROM goods;<br>SELECT *FROM ggg;<br>#查询商品价格大于50的商品<br>SELECT * FROM goods WHERE gprice&gt;50;<br>#查询商品价格大于50小于100的商品信息<br>SELECT * FROM goods WHERE gprice&gt;50 AND gprice&lt;100;<br>SELECT * FROM goods WHERE gprice BETWEEN 50 AND 100;<br>#查询商品数量 as 新字段名  或 ‘新字段名’  给列名重命名成新的列名<br>SELECT COUNT(</em>) FROM goods;<br>SELECT COUNT(*) AS’总数量’FROM goods;<br>#查询商品总价格，平均价格，最高，最低价格<br>SELECT SUM(gprice) ‘总价格’ FROM goods;<br>SELECT AVG(gprice) ‘平均价格’ FROM goods;<br>SELECT MAX(gprice) ‘最高价格’ FROM goods;<br>SELECT MIN(gprice) ‘最低价格’ FROM goods;<br>#删除gid等于3的数据<br>DELETE FROM goods WHERE gid=3;<br>#将价格进行更改<br>UPDATE goods SET gprice=15 WHERE gnam=’臭鼬’;<br>#把gnam中等于哈士奇臭鼬的都查询出来<br>SELECT *FROM goods WHERE gnam IN(‘哈士奇’,’臭鼬’);<br>#把商品名字重复的去掉<br>SELECT DISTINCT gnam FROM goods;<br>#查询表的前两行<br>SELECT * FROM goods LIMIT 0,2;<br>#修改表名<br>ALTER TABLE goods RENAME TO ggg;<br>#修改数据类型<br>#alter table modify 列名的数据类型<br>#修改列名 alter table&lt;表名&gt; change 旧列名 新列名<br>#删除列alter table 表名drop列名<br>#删除表drop table 表名<br>#添加列 alter table 表名 add 新列名 数据类型</p>
 
       
 
@@ -264,7 +253,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/16/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/21/Mysql%E6%80%BB%E7%BB%93/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -278,15 +267,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/21/Mysql%E6%80%BB%E7%BB%93/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Mysql总结
-        
-      </div>
-    </a>
   
+    <a href="/2019/10/16/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
